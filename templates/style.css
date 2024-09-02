@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+header {
+    background-color: #1b1b2f;
+    color: white;
+    padding: 15px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Added more gap for better alignment */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #1b1b2f;
+    color: white;
+    text-align: center;
+    padding: 60px 20px; /* Increased padding for more space */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px; /* Reduced margin for better spacing */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px; /* Reduced margin for better spacing */
+    max-width: 600px;
+    margin: 0 auto 20px; /* Center the text */
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Added gap between image and text */
+}
+
+.author img {
+    border-radius: 50%;
+    width: 40px; /* Adjusted size for better alignment */
+    height: 40px; /* Adjusted size for better alignment */
+}
+
+.author span {
+    font-size: 1em;
+    color: #ffffff;
+}
