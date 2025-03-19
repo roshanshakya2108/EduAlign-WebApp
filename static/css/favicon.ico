@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Favicon</title>
+</head>
+<body>
+    <h1>Generate Favicon</h1>
+    <canvas id="canvas" width="32" height="32" style="display: none;"></canvas>
+    <button onclick="generateFavicon()">Generate Favicon</button>
+    <a id="downloadLink" download="favicon.ico">Download Favicon</a>
+
+    <script>
+        function generateFavicon() {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Draw a simple icon
+            ctx.fillStyle = '#FF0000'; // Red color
+            ctx.fillRect(0, 0, 32, 32);
+            ctx.fillStyle = '#FFFFFF'; // White color
+            ctx.beginPath();
+            ctx.arc(16, 16, 10, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Convert the canvas to a data URL
+            const faviconDataURL = canvas.toDataURL('image/x-icon');
+
+            // Create a download link
+            const downloadLink = document.getElementById('downloadLink');
+            downloadLink.href = faviconDataURL;
+        }
+    </script>
+</body>
+</html>
